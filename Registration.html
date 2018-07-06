@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LIFE.COM</title>
+</head>
+<body>
+
+
+	<script>
+			function showhidepass() {
+		    var x = document.getElementById("passinput");
+		    var y = document.getElementById("conpassinput");
+		    if (x.type === "password" && y.type === "password") {
+		        x.type = "text";
+		        y.type = "text";
+		    } else {
+		        x.type = "password";
+		        y.type = "password";
+		    }
+			}
+	</script>
+
+
+	<form>
+
+		<!--                    NEVIGATION BAR                        -->
+		<table align="center" border="0">
+
+			<tr >
+				<td align="right" width="470"> <img src="blood-icon.jpg" width="70" height="50">  </td>
+				<td width="530"> <h1>  Life.com  </h1>  </td>
+			</tr>
+
+			<tr>
+				<td colspan="2">
+					<table>
+						<tr align="center">
+							<td width="200">
+								<a href="Homepage.html"> Home </a>
+							</td>
+
+							<td width="200">
+								 <a href="Available Blood.html"> Available Blood </a> 
+							</td>
+
+							<td width="200">
+								  <a href="Sign In.html"> Sign In </a>  
+							</td>
+
+							<td width="200">
+								  <a href="FAQ.html"> FAQ </a>  
+							</td>
+
+							<td width="200">
+								<a href="About Us.html">About Us</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+		</table>
+
+		<br/>
+		<br/>
+
+
+
+
+		<!--                    REGISTRATION                        -->
+
+		<table align="center" >
+			<tr>
+				<td width="1000">
+					<fieldset>
+						<legend><b>REGISTRATION</b></legend>
+
+							<table >
+								<tr>
+									<td width="150"><label>Name : </label></td>
+									<td><input type="text" name="name" placeholder="Mandatory Field!" required="nreq" /><br/></td>
+									
+								</tr>
+							</table>
+							<hr/>
+							
+							<table >
+								<tr>
+									<td width="150"><label>Email : </label>
+									</td>
+									<td>
+									<input type="text" name="email"  placeholder="Mandatory Field!" required="ereq" /><br/>
+									</td>
+								</tr>
+							</table>
+
+							<hr/>
+							<table >
+								<tr>
+									<td width="150"><label>User Name : </label>
+									</td>
+									<td>
+									<input type="text" name="username" required="unreq"  placeholder="Mandatory Field!"/><br/>
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+
+							<table >
+								<tr>
+									<td width="150"><label>Password : </label>
+									</td>
+									<td >
+									<input type="password" name="password" id="passinput" placeholder="Mandatory Field!" required="preq" />
+									</td>
+									<td>
+									<input type="checkbox" onclick="showhidepass()">Show/Hide Password 
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+
+							<table >
+								<tr>
+									<td width="150"><label>Confirm Password : </label>
+									</td>
+									<td>
+									<input type="password" name="confirmpass" id="conpassinput" placeholder="Mandatory Field!" required="conpreq" /><br/>
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+							<table >
+								<tr>
+									<td width="155"><label>Date Of Birth : </label>
+									</td>
+									<td>
+									<input type="date" name="dob" placeholder="Mandatory Field!" required="dobreq" >
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+							<table >
+								<tr>
+									<td width="150"><label>Contact No: </label>
+									</td>
+									<td>
+									<input type="text" name="conno" placeholder="Mandatory Field!" required="connoreq" >
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+							<table >
+								<tr>
+									<td width="150"><label>Present Address : </label>
+									</td>
+									<td>
+									<input type="text" name="padd" placeholder="Mandatory Field!" required="paddreq" >
+									</td>
+									<td width="150" align="right"><label>City : </label>
+									</td align="center">
+									<td >
+										<select name="location">
+										<option value="Dhaka">Dhaka</option>
+										<option value="Khulna">Khulna</option>
+										<option value="Rajshahi">Rajshahi</option>
+										</select>
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+							<table >
+								<tr>
+									<td width="150" ><label>Permanent Address : </label>
+									</td>
+									<td>
+									<input type="text" name="peradd" >
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+							<table >
+								<tr>
+									<td width="150"><label>Disabilities : </label>
+									</td>
+									<td>
+									<input type="text" name="disabilities" placeholder="Mandatory Field!" required="required" />
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+							<table >
+								<tr>
+									<td width="135"><label>Gender : </label>
+									</td>
+									<td>
+									<input type="radio" name="gender" value="male" required="required" placeholder="Mandatory Field!">Male
+									<input type="radio" name="gender" value="female">Female
+									<input type="radio" name="gender" value="others">Others
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+							<table >
+								<tr>
+									<td width="135"><label>User Type : </label>
+									</td>
+									<td>
+									<input type="checkbox" name="usertype[]" value="donor" required="required" placeholder="Mandatory Field!">Donor
+									<input type="checkbox" name="usertype[]" value="receiver">Receiver
+									
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+							<table >
+								<tr>
+									<td width="135"><label>Blood Group : </label>
+									</td>
+									<td>
+									<input type="radio" name="bloodGroup" value="A+" required="required" placeholder="Mandatory Field!">A+
+									<input type="radio" name="bloodGroup" value="O+">O+
+									<input type="radio" name="bloodGroup" value="B+">B+
+									<input type="radio" name="bloodGroup" value="AB+">AB+
+									<input type="radio" name="bloodGroup" value="A-">A-
+									<input type="radio" name="bloodGroup" value="O-">O-
+									<input type="radio" name="bloodGroup" value="B-">B-
+									<input type="radio" name="bloodGroup" value="AB-">AB-
+									
+									</td>
+								</tr>
+							</table>
+						
+							<hr/>
+
+							<table >
+								<tr>
+									<td colspan= "2"> <input type="checkbox"/> I agree to all the terms and conditions and hereby declare that the above information is true.
+									</td>
+								</tr>
+							</table>
+							<hr/>
+
+							
+							<span>* <?php echo $Err;?></span>
+							<br/><br/>
+							<input type="submit" name="submit" value="Confirm Registration"/>
+							<input type="reset" name="reset" value="Reset"/>
+							<br/>
+
+							<a href=""> Register with FACEBOOK/GOOGLE!!! </a>
+				
+							
+					</fieldset>
+				</td>
+			</tr>
+		
+		</table>
+
+
+
+	</form>
+</body>
+</html>
